@@ -18,6 +18,9 @@ public class RomanExample extends Example {
         _firstNumber = lessTenList.indexOf(firstNumber);
         _secondNumber = lessTenList.indexOf(secondNumber);
         int arabicNumber = Integer.parseInt(super.getDecision());
+        if(arabicNumber <= 0){
+            throw new ArithmeticException("Отрицательное число или ноль");
+        }
         return convertArabicToRoman(arabicNumber);
     }
 }

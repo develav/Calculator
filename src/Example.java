@@ -18,9 +18,6 @@ public abstract class Example {
                 break;
             case "-":
                 decision = _firstNumber - _secondNumber;
-                if(decision <= 0){
-                    throw new ArithmeticException("Отрицательное число или ноль");
-                }
                 break;
             case "*":
                 decision = _firstNumber * _secondNumber;
